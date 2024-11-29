@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Added for alignment */
+}
+
+.logo {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold; /* Added for emphasis */
+}
+
+.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centered nav items */
+    gap: 1.5rem;
+}
+
+.navbar .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Added smooth hover transition */
+}
+
+.navbar .nav-list a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem; /* Added padding for small screens */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block; /* Ensures button-like appearance */
+    transition: background-color 0.3s ease; /* Added smooth hover transition */
+}
+
+.hero .btn:hover {
+    background-color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about p {
+    margin: 1rem 0; /* Added spacing for paragraphs */
+}
+
+/* Products Section */
+.products {
+    padding: 2rem 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto; /* Centering form */
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Added smooth transition */
+}
+
+.contact button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 0.9rem; /* Adjusted font size for better readability */
+}
